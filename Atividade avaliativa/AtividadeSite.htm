@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Juca</title>
+
 </head>
 
 <style>
-    body {
+    @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
+    body {
         margin: 0;
         background-color: rgb(88, 11, 11);
-
-
+        font-family: "Kode Mono", monospace;
     }
 
     * {
         box-sizing: border-box;
-
     }
 
     h1 h2 {
-        font-family: "Micro 5";
-
-
+        font-family: "Kode Mono", monospace;
+        font-weight: bold;
     }
 
     .clear {
@@ -46,6 +45,7 @@
         background-color: blanchedalmond;
         color: rgb(0, 0, 0);
         padding: 10px 10px;
+        font-size: 38px;
 
 
     }
@@ -56,31 +56,42 @@
     }
 
     .menu {
+        float: left;
         width: 100%;
         background-color: rgb(54, 51, 51);
-        padding: 10px ;
-
-
     }
 
     .menu a {
-        width: 100%;
-        float: none;
+
+        float: left;
         color: white;
         text-decoration: none;
         padding: 20px;
     }
-
 
     .menu a:hover {
         background-color: rgb(163, 2, 2);
         transition: 0.3s;
     }
 
+    .ativo {
+       background-color:  rgb(88, 11, 11);
+    }
+
     .conteudo {
         width: 70%;
+        font-size: 22px;
         float: left;
         padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .foto {
+        width: 30%;
+        float: left;
+        padding: 18px 20px;
+        text-align: center;
+        font-size: 14px;
     }
 
 
@@ -91,6 +102,8 @@
         float: left;
         text-align: center;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Jacquarda+Bastarda+9&display=swap');
 </style>
 
 <body>
@@ -107,7 +120,7 @@
         <!--menu-->
         <div class="menu">
             <div class="menu a">
-                <a href="#">Início</a>
+                <a href="#" class="ativo">Início</a>
                 <a href="#">Blog</a>
                 <a href="#">Loja</a>
                 <a href="#">Sobre</a>
@@ -121,23 +134,55 @@
         <div class="corpo">
 
             <div class="foto">
-
+                <img class="imgP" src="Imagem/juca.jpg" width="150px">
+                <p>Juca, uma figura emblemática de sua pequena cidade do interior, é celebrado por sua gentileza,
+                    paciência e conexão profunda com a comunidade e a natureza. Sua habilidade de liderar um movimento
+                    pacífico contra o desrespeito de turistas redefiniu sua imagem, mostrando sua capacidade de defender
+                    firmemente os valores comunitários. Hoje, é visto como um pilar de sabedoria e justiça, inspirando
+                    mudança e fortalecendo o tecido social de sua comunidade.</p>
             </div>
 
             <!--conteudo-->
             <div class="conteudo">
                 <h1>Conheça o Juca Furioso</h1>
-                <p>Juca, um homem gentil e paciente da pequena cidade do interior, enfrenta um grupo de turistas
-                    barulhentos que perturbam a paz local.
-                    Após tentar resolver a situação amigavelmente e ser ignorado, Juca, surpreendentemente, se enche de
-                    fúria e lidera um movimento comunitário pacífico,
-                    mas firme, exigindo respeito dos visitantes. Impressionados pela união e determinação da comunidade,
-                    os turistas pedem desculpas e mudam seu comportamento.
-                    A história de Juca, agora também conhecido por sua capacidade de defender a comunidade, se torna um
-                    exemplo de que até as pessoas mais pacíficas têm limites,
-                    restaurando a paz e harmonia na cidade.
-
+                <p>Numa pequena cidade do interior, onde todos se conheciam pelo nome, vivia Juca, um homem conhecido
+                    por sua paciência e gentileza. Juca era o tipo de pessoa que sempre tinha um sorriso no rosto, uma
+                    palavra amiga para oferecer e uma disposição inabalável para ajudar quem precisasse. No entanto, um
+                    dia, algo inusitado aconteceu que mudou a forma como todos viam Juca. <br>
                 </p>
+                <p>
+                    Numa tarde ensolarada de domingo, Juca estava em sua casa tranquila, cuidando do jardim, quando um
+                    barulho estridente perturbou a paz do lugar. Era um grupo de turistas que havia chegado à cidade com
+                    suas motos barulhentas, desrespeitando a tranquilidade e o sossego dos moradores locais. Juca,
+                    tentando manter a calma, se aproximou do grupo e educadamente pediu que diminuíssem o barulho,
+                    explicando que a cidade valorizava a paz e o respeito mútuo. <br>
+                </p>
+                <p>
+                    Para a surpresa de Juca, os turistas não apenas ignoraram seu pedido, como também começaram a zombar
+                    dele, aumentando ainda mais o volume de suas motos. Foi então que algo inesperado aconteceu: Juca,
+                    conhecido por sua calma e paciência, sentiu uma fúria crescer dentro de si. Sua expressão amigável
+                    deu lugar a uma feição séria e determinada. Ele não estava mais disposto a tolerar o desrespeito
+                    daqueles turistas. <br>
+                </p>
+                <p>
+                    Juca, movido por uma raiva incomum, decidiu agir. Ele foi até a prefeitura, mobilizou os moradores
+                    da cidade e organizou um movimento pacífico, mas firme, exigindo respeito e consideração por parte
+                    dos visitantes. A manifestação chamou a atenção dos turistas, que finalmente entenderam a mensagem.
+                    Impressionados com a união e a determinação da comunidade, liderada por um Juca furioso, mas justo,
+                    eles pediram desculpas pelo transtorno causado e prometeram mudar sua atitude. <br>
+                </p>
+                <p>
+                    A partir daquele dia, Juca ficou conhecido não apenas como o homem gentil e paciente de sempre, mas
+                    também como alguém capaz de defender sua comunidade com firmeza e coragem quando necessário. A
+                    história de Juca furioso se espalhou pela cidade, tornando-se um exemplo de que, mesmo as pessoas
+                    mais pacíficas, têm limites que não devem ser ultrapassados. E assim, a pequena cidade do interior
+                    voltou a desfrutar de sua paz e harmonia, graças à atitude corajosa de um de seus moradores mais
+                    queridos. <br>
+                </p>
+
+
+
+
             </div>
 
         </div>
