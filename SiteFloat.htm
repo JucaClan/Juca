@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Float</title>
+</head>
+
+<style>
+    body {
+        @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap') 
+        margin: 0;
+        background-color: rgb(88, 11, 11);
+        font-family: "Micro 5", sans-serif;
+
+    }
+
+    * {
+        box-sizing: border-box;
+        
+    }
+
+    h1 h2 {
+        font-family: "Micro 5";
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .container {
+        background-color: blanchedalmond;
+        width: 80%;
+        max-width: 1080px;
+        margin-top: 10px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .cabecalho {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 20px 10px;
+        float: left;
+       
+    }
+
+    .corpo {
+        width: 100%;
+        float: left;
+    }
+
+    .lateral {
+        width: 30%;
+        float: left;
+        padding-top: 10px;
+    }
+
+    .menulateral a {
+        display: block;
+        padding: 10px;
+        background-color: rgb(88, 11, 11);
+        margin-bottom: 5px;
+
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+
+
+    }
+
+    .menulateral a:hover {
+        background-color: rgb(163, 2, 2);
+        transition: 0.3s;
+    }
+
+    .conteudo {
+        width: 70%;
+        float: left;
+        padding-left: 10px;
+    }
+
+
+    .rodape {
+        width: 100%;
+        background-color: black;
+        color: white;
+        float: left;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <!--cabecalho-->
+        <div class="cabecalho">
+            <h1>Site Furioso</h1>
+        </div>
+
+        <!--quebra linha-->
+        <div class="clear"></div>
+
+        <!--corpo-->
+        <div class="corpo">
+
+            <!--lateral-->
+            <div class="lateral">
+                <!--DASHBOARD-->
+                <div class="menulateral">
+                    <a href="#">Pagina Inicial</a>
+                    <a href="#">Loja Furiosa</a>
+                    <a href="#">Contato Furioso</a>
+                    <a href="#">Sobre Juca Furioso</a>
+                </div>
+
+            </div>
+
+            <!--conteudo-->
+            <div class="conteudo">
+                <h1>Juca Furioso</h1>
+                <p>Juca, um homem gentil e paciente da pequena cidade do interior, enfrenta um grupo de turistas
+                    barulhentos que perturbam a paz local.
+                    Após tentar resolver a situação amigavelmente e ser ignorado, Juca, surpreendentemente, se enche de
+                    fúria e lidera um movimento comunitário pacífico,
+                    mas firme, exigindo respeito dos visitantes. Impressionados pela união e determinação da comunidade,
+                    os turistas pedem desculpas e mudam seu comportamento.
+                    A história de Juca, agora também conhecido por sua capacidade de defender a comunidade, se torna um
+                    exemplo de que até as pessoas mais pacíficas têm limites,
+                    restaurando a paz e harmonia na cidade.
+
+                </p>
+            </div>
+
+        </div>
+
+        <!--quebra linha-->
+        <div class="clear"></div>
+
+        <!--rodape-->
+        <div class="rodape">
+            <p>&copy; Juca's Furioso 2024 - Todos os direitos reservados</p>
+        </div>
+
+        <!--quebra linha-->
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>
