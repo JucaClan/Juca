@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo Flex</title>
+    <style>
+
+        .container{
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .verde{
+            background-color: green;
+            padding: 10px;
+            flex-grow: 1;
+            align-self: stretch;
+        }
+        .vermelho{
+            background-color: red;
+            padding: 10px;
+            flex-grow: 1;
+            align-self: flex-end;
+        }
+        .azul{
+            background-color: blue;
+            padding: 10px;
+            flex-grow: 2;
+        }
+        .rosa{
+            background-color: palevioletred;
+            padding: 10px;
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="verde">
+            Verde
+        </div>
+
+        <div class="vermelho">
+            Vermelho
+        </div>
+
+        <div class="azul">
+            Azul <br> 
+            Show <br>
+            10 
+        </div>
+
+        <div class="rosa">
+            Rosa <br>
+            muito <br>
+            show <br>
+            mesmo <br>
+            bro 
+        </div>
+
+    </div>
+    
+</body>
+</html>
