@@ -1,19 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1080px;
+            /*centralizar*/
+            margin: auto;
+            background-color: white;
+
+        }
+
+        .cabecalho {
+            background-color: rgb(40, 40, 41);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
 
 
+        }
+
+        .logo img {
+            max-width: 80px;
+        }
+
+        .menu {
+            display: flex;
+            float: left;
+            width: 100%;
+            background-color: rgb(54, 51, 51);
+
+        }
+
+        .menu a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+        }
+
+        .menu a:hover {
+            background-color: rgb(66, 60, 60);
+            transition: 0.3s;
+        }
+
+        .corpo {}
+
+        .rodape1 {}
+
+        .rodape2 {}
+        
     </style>
-    
+
 </head>
 
-
 <body>
-    
+    <div class="container">
+
+        <div class="cabecalho">
+
+            <div class="logo">
+                <img src="Imagens/forbes-300x300.webp" alt="logo">
+            </div>
+            <div class="usuario">
+                usuario*
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Fornecedores</a>
+            <a href="#">Contato</a>
+            <a href="#">Carrinho</a>
+        </div>
+
+        <div class="corpo">
+
+        </div>
+
+        <div class="rodape1">
+
+        </div>
+
+        <div class="rodape2">
+
+        </div>
+
+
+
+    </div>
+
 </body>
+
 </html>
