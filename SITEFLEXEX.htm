@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola SenacFlex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        body {
+            margin: 0;
+            background-color: rgb(47, 47, 47);
+            font-family: "Open Sans", sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: auto;
+            /* centralizar */
+            background-color: white;
+        }
+        .cabecalho {
+            width: 100%;
+            background-color: rgb(29, 29, 29);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .logo img {
+            max-width: 300px;
+        }
+        .usuario{
+            color: white;
+            font-size: 70px;
+            padding-right: 10px;
+        }
+        .menu {
+            display: flex;
+            background-color: rgb(20, 19, 19);
+            width: 100%;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            padding: 10px;
+        }
+        .menu a:hover {
+            background-color: rgb(26, 16, 16);
+             transition: 0.4s; 
+             scale: 1.05; 
+           
+        }
+        .menu a:last-child {
+            background-color: red;
+            margin-left: auto;
+        }
+        .corpo {
+            display: flex;
+            width: 100%;
+        }
+        .conteudo {
+            flex: 70%;
+            padding: 20px;
+        }
+        .galeria{
+            background-color: rgb(211, 211, 211);
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .galeria img{
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        .lateral {
+            flex: 30%;
+            background-color: rgb(203, 203, 203);
+            padding: 20px;
+        }
+        .rodape1 {
+            width: 100%;
+            display: flex;
+            background-color: rgb(35, 35, 35);
+            color: white;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .rodape1 div{
+            padding: 20px;
+        }
+        .rodape2 {
+            display: flex;
+            color: white;
+            background-color: black;
+            justify-content: space-around;
+        }
+        /* Ajustes de responsividade */
+        @media screen and (max-width: 600px) {
+            .menu{
+                flex-direction: column;
+                text-align: center;
+            }
+            .corpo, .rodape1{
+                flex-direction: column;
+            }
+            .rodape2{
+                flex-direction: column;
+                text-align: center;
+            }
+            .cabecalho{
+                flex-direction: column;
+            }
+            .logo img{
+                display: block;
+                margin: auto;
+            }
+            .usuario{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <div class="logo animate__animated animate__fadeIn">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="usuario">
+                <i class='bx bx-user-circle'></i>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Fornecedores</a>
+            <a href="#">Contato</a>
+            <a href="#"><i class='bx bxs-cart'></i> Carrinho</a>
+        </div>
+        <div class="corpo">
+            <div class="conteudo animate__animated animate__fadeIn">
+                <h1>Conheça o Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloribus, expedita,
+                    necessitatibus natus obcaecati distinctio qui facilis voluptate minus cupiditate fugiat! Quasi
+                    distinctio suscipit voluptates error quod ipsa ratione rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloribus, expedita,
+                    necessitatibus natus obcaecati distinctio qui facilis voluptate minus cupiditate fugiat! Quasi
+                    distinctio suscipit voluptates error quod ipsa ratione rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloribus, expedita,
+                    necessitatibus natus obcaecati distinctio qui facilis voluptate minus cupiditate fugiat! Quasi
+                    distinctio suscipit voluptates error quod ipsa ratione rem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloribus, expedita,
+                    necessitatibus natus obcaecati distinctio qui facilis voluptate minus cupiditate fugiat! Quasi
+                    distinctio suscipit voluptates error quod ipsa ratione rem.</p>
+                <h2>Galeria:</h2>
+                <p>Conheça as fotos show:</p>
+                <div class="galeria">
+                    <img src="img/jd.webp" alt="João Doe">
+                    <img src="img/jd.webp" alt="João Doe">
+                    <img src="img/jd.webp" alt="João Doe">
+                </div>
+            </div>
+            <div class="lateral">
+                <h2>Categorias:</h2>
+                <ul>
+                    <li>Nome da Categoria</li>
+                    <li>Nome da Categoria</li>
+                    <li>Nome da Categoria</li>
+                    <li>Nome da Categoria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape1">
+            <div class="rodapemapa">
+                <h2>Mapa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti illum, sunt culpa quidem amet
+                    dolorum nesciunt quae eaque ex similique est rem voluptates dignissimos veniam alias natus nisi eum!
+                    At!</p>
+            </div>
+            <div class="rodapecontato">
+                <h2>Contato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti illum, sunt culpa quidem amet
+                    dolorum nesciunt quae eaque ex similique est rem voluptates dignissimos veniam alias natus nisi eum!
+                    At!</p>
+            </div>
+            <div class="rodapemenu">
+                <h2>Menu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti illum, sunt culpa quidem amet
+                    dolorum nesciunt quae eaque ex similique est rem voluptates dignissimos veniam alias natus nisi eum!
+                    At!</p>
+            </div>
+        </div>
+        <div class="rodape2">
+            <p>&copy; 2024 SenacFlex - Todos os direitos reservados.</p>
+            <p>CNPJ: 03.709.814/0001-98</p>
+        </div>
+    </div>
+    <!-- Nada vai aqui pra baixo!!! -->
+</body>
+</html>
