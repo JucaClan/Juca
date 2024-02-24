@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Flex</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(66, 66, 66);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1080px;
+            background-color: white;
+            margin: auto;
+        }
+
+        .cabecalho {
+            background-color: rgba(46, 107, 172, 255);
+            width: 100%;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 38px;
+        }
+
+        .cabecalho h1 {
+            font-size: 34px;
+            font-weight: bolder;
+        }
+
+        .cabecalho h2 {
+            font-size: 18px;
+        }
+
+        .menu {
+            display: flex;
+            float: left;
+            width: 100%;
+            background-color: rgb(43, 41, 41);
+        }
+
+        .menu a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+        }
+
+        .menu a:hover {
+            background-color: rgb(54, 54, 54);
+            transition: 0.3s;
+            scale: 1.05;
+        }
+
+        .corpo {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+        }
+
+        .lateral {
+            flex: 25%;
+            background-color: rgba(241, 241, 241, 255);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .lateral img {
+            max-width: 200px;
+            height: auto;
+
+        }
+
+        .conteudo {
+            flex: 75%;
+            background-color: rgba(255, 255, 255, 255);
+            padding: 20px;
+
+        }
+
+        .conteudo img {
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        .rodape {
+            display: flex;
+            background-color: rgba(221, 221, 221, 255);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold
+        }
+
+        /* Ajustes de responsividade */
+        @media screen and (max-width: 600px) {
+            .cabecalho {
+                flex-direction: column;
+            }
+
+            .menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .corpo,
+            .rodape {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .conteudo {
+                order: 1;
+            }
+
+            .lateral {
+                order: 2;
+            }
+
+
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="cabecalho">
+        <h1>Senac São Paulo</h1>
+        <h2>Desenvolvimento de layout com Flex layout</h2>
+    </div>
+
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Loja</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre</a>
+    </div>
+
+    <div class="corpo">
+        <div class="lateral">
+            <h1>O Senac</h1>
+            <img src="imagens/senac_pindamonhangaba_fachada-41.jpg" alt="Fachada Senac">
+            <p>Desde 1946, o Serviço Nacional de Aprendizagem Comercial - Senac é o principal agente de educação
+                profissional voltado para o Comércio de Bens, Serviços e Turismo do País. <br>
+            </p>
+            <p>
+                Hoje, está presente em mais de 1.800 municípios, de Norte a Sul do Brasil, onde mantém infraestrutura de
+                ponta composta por mais de 600 unidades escolares, empresas pedagógicas e unidades móveis. <br>
+            </p>
+            <p>
+                Seu portfólio contempla cursos presenciais e a distância, em diversas áreas do conhecimento, que vão da
+                Formação Inicial e Continuada à Pós-graduação e permitem ao aluno planejar sua carreira profissional em
+                uma perspectiva de educação continuada. <br>
+            </p>
+
+        </div>
+
+        <div class="conteudo">
+
+            <h1>Educação a distância </h1>
+            <h4>Senac EAD: educação a distância com a qualidade</h4>
+            <img src="imagens/senac_EAD.jfif" alt="Educação a distância">
+            <p>
+                Flexibilidade de tempo, espaço e dinheiro tornou a educação a distância uma opção viável e eficiente
+                para quem pensa em investir no aprimoramento acadêmico e profissional. O uso de ferramentas e
+                metodologias mais dinâmicas também são atrativos do EAD, que conta com 9 milhões de matriculados, de
+                acordo com a Associação Brasileira de Educação a Distância (Abed). <br>
+            </p>
+            <p>
+                Comprometido em proporcionar a melhor experiência aos alunos, o Senac vai além das características
+                comuns do setor, oferecendo o melhor ensino a distância do país. Entre seus diferenciais, está a ampla
+                oferta em diversos níveis de ensino e áreas de conhecimento. São mais de 380 opções em cursos livres,
+                técnicos, graduações, pós-graduações e extensões universitárias, fazendo com que você possa construir
+                uma trajetória de formação e sucesso. <br>
+            </p>
+            <p>
+                Para atividades presenciais obrigatórias, a instituição conta com mais de 380 polos credenciados,
+                distribuídos em todos os Estados do país. Já no ambiente digital, a WebTV Senac enriquece a experiência,
+                aproximando o relacionamento entre aluno e docente com aulas em vídeo. <br>
+            </p>
+            <p>
+                Instrutores com experiência de mercado também garantem referências atualizadas e atividades práticas,
+                deixando você preparado para enfrentar os desafios em sua área de atuação. Tudo isso aliado ao
+                reconhecimento e credibilidade do Senac, que já na década de 1940 promovia o ensino a distância por meio
+                de seus cursos na Universidade do Ar, uma ação pioneira que na época levou conhecimento profissional a
+                locais distantes por meio de programas de rádio. <br>
+            </p>
+
+        </div>
+
+
+    </div>
+
+    <div class="rodape">
+        <p>&copy; Senac - 2032</p>
+    </div>
+</div>
+
+<body>
+
+
+</body>
+
+</html>
