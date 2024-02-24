@@ -8,15 +8,51 @@
 
     <style>
         body {
-            margin: 0;
+            margin:0;
             display: grid;
             grid-template-columns: repeat(12, 8.33%);
+            grid-template-rows: 200px 60px 400px 150px 60px;
         }
+        .logo {
+            background-color: rgb(131, 44, 44);
+            grid-area: 1 / 1 / 1 / 6;
+        }
+
+        .publi{
+            background-color: antiquewhite;
+            grid: 1 / 6 / 1/ 12;
+        }
+
+        .menu{
+            background-color: gray;
+            grid-area: 2 / 1 / 2 / 13;
+        }
+
+        .main{
+            background-color: rgb(139, 14, 14);
+            grid-area: 3 / 1 / 3/ 9;
+        }
+
+
     </style>
+
 </head>
 
 <body>
+    <div class="logo">
+      LOGO  
+    </div>
+    <div class="publi">
+        PROPAGANDA
+    </div>
 
+    <div class="menu">
+        MENU
+    </div>
+    <div class="main">
+MAIN
+    </div>
+    
 </body>
 
 </html>
